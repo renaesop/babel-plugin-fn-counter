@@ -40,15 +40,6 @@ module.exports = function() {
         const functionName = path.node.id ? path.node.id.name : 'anonymous';
         const uniqueKey = `${state.file.opts.filename}:${functionName}:${path.node.loc.start.line}:${path.node.loc.start.column}`;
         path.insertBefore(`
-          if (typeof __fn__counter === 'undefined') {
-            if (typeof global !== 'undefined') {
-              global.__fn__counter = {};
-            } else if (typeof window !== 'undefined') {
-              window.__fn__counter = {};
-            } else if (typeof self !== 'undefined') {
-              self.__fn__counter = {};
-            }
-          }
           if (!__fn__counter['${uniqueKey}']) {
             __fn__counter['${uniqueKey}'] = 0;
           }
