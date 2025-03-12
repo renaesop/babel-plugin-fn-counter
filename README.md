@@ -1,6 +1,8 @@
 # babel-plugin-fn-counter
 a simple plugin counter
 
+![Node.js CI](https://github.com/renaesop/babel-plugin-fn-counter/actions/workflows/node.js.yml/badge.svg)
+
 ## Installation
 To install the plugin, use npm:
 
