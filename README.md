@@ -1,6 +1,8 @@
 # babel-plugin-fn-counter
 a simple plugin counter
 
+[![CI](https://github.com/renaesop/babel-plugin-fn-counter/actions/workflows/ci.yml/badge.svg)](https://github.com/renaesop/babel-plugin-fn-counter/actions/workflows/ci.yml)
+
 ## Installation
 To install the plugin, use npm:
 
