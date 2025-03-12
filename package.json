@@ -3,5 +3,7 @@
   "version": "1.0.0",
   "description": "A simple Babel plugin counter",
   "main": "src/index.js",
-  "dependencies": {}
+  "dependencies": {
+    "source-map": "^0.7.3"
+  }
 }
