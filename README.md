@@ -18,3 +18,12 @@ To use the plugin in your Babel configuration file (usually named "babel.config.
   "plugins": ["babel-plugin-fn-counter"]
 }
 ```
+
+## Sourcemap Visualization
+The plugin now supports visualizing `__fn__counter` with a sourcemap. You can use the `visualizer.html` file to upload your `__fn__counter` JSON file and sourcemap for visualization.
+
+### Instructions
+1. Open the `visualizer.html` file in your browser.
+2. Upload the `__fn__counter` JSON file using the first file input.
+3. Upload the sourcemap file using the second file input.
+4. Click the "Visualize" button to see the visualization of the data.
