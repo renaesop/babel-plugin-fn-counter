@@ -13,7 +13,7 @@ describe('babel-plugin-fn-counter', () => {
       b();
       c();
     `;
-    const output = transform(code, { plugins: [plugin] });
+    const output = transform(code, { plugins: [plugin], filename: 'test/test.js' });
     const script = new Script(output.code);
     const sandbox = { __fn__counter: {} };
     script.runInNewContext(sandbox);
