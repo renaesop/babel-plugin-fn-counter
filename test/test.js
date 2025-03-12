@@ -18,8 +18,9 @@ describe('babel-plugin-fn-counter', () => {
     const sandbox = { __fn__counter: {} };
     script.runInNewContext(sandbox);
     const { __fn__counter } = sandbox;
+    console.log(output, __fn__counter)
     assert.strictEqual(__fn__counter['test/test.js:a:2:6'], 1);
     assert.strictEqual(__fn__counter['test/test.js:b:3:12'], 1);
-    assert.strictEqual(__fn__counter['test/test.js:c:4:12'], 1);
+    assert.strictEqual(__fn__counter['test/test.js:arrow_function:4:12'], 1);
   });
 });

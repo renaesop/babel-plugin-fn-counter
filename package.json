@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A simple Babel plugin counter",
   "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "mocha": "^11.1.0"

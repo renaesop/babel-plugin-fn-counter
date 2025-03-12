@@ -1,8 +1,6 @@
 # babel-plugin-fn-counter
 a simple plugin counter
 
-[![CI](https://github.com/renaesop/babel-plugin-fn-counter/actions/workflows/ci.yml/badge.svg)](https://github.com/renaesop/babel-plugin-fn-counter/actions/workflows/ci.yml)
-
 ## Installation
 To install the plugin, use npm:
 
@@ -18,3 +16,6 @@ To use the plugin in your Babel configuration file (usually named "babel.config.
   "plugins": ["babel-plugin-fn-counter"]
 }
 ```
+
+## CI Status
+![CI](https://github.com/renaesop/babel-plugin-fn-counter/actions/workflows/ci.yml/badge.svg)
