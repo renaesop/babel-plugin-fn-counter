@@ -21,7 +21,7 @@ module.exports = function() {
         const functionName = path.node.id.name;
         const uniqueKey = `${state.file.opts.filename}:${functionName}:${path.node.loc.start.line}:${path.node.loc.start.column}`;
         path.insertBefore(`
-          if (!__fn__counter['${uniqueKey}']) {
+          if (typeof __fn__counter['${uniqueKey}'] === 'undefined') {
             __fn__counter['${uniqueKey}'] = 0;
           }
           __fn__counter['${uniqueKey}']++;
@@ -41,7 +41,7 @@ module.exports = function() {
         const functionName = 'arrow_function';
         const uniqueKey = `${state.file.opts.filename}:${functionName}:${path.node.loc.start.line}:${path.node.loc.start.column}`;
         path.insertBefore(`
-          if (!__fn__counter['${uniqueKey}']) {
+          if (typeof __fn__counter['${uniqueKey}'] === 'undefined') {
             __fn__counter['${uniqueKey}'] = 0;
           }
           __fn__counter['${uniqueKey}']++;
